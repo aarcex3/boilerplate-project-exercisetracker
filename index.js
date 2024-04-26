@@ -72,7 +72,6 @@ app.post('/api/users/:_id/exercises',(req,res)=>{
 
 app.get('/api/users/:_id/logs',(req,res)=>{
     const {_id} = req.params;
-    console.log(req.params)
     res.json({
       username:users[_id],
       count: logs[_id].length,
